@@ -36,8 +36,7 @@ print ("Command:\n" + diff_string)
 os.system(diff_string)
 
 #make a directory to keep our bins
-#for some reason this fails if it exists, but #wontfix
-if not os.path.isfile('adiff_tmpdir'):
+if not os.path.exists('adiff_tmpdir'):
 	os.mkdir('adiff_tmpdir')
 final_file = open(outfile, "w+")
 
